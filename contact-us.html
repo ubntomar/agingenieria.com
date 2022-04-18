@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contáctanos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+
+<body>
+    <div class="container" id="app">
+        <div class="company">
+            <div class="company-info company-info--left ">
+                <h5>SOMOS TU SOLUCIÓN DE INTERNET BANDA ANCHA</h5>
+            </div>
+        </div>
+        <div class="phone">
+            <div class="company-info company-info--right">
+                <h5><i class="fa-solid fa-envelope"></i> ventas@agingenieria.tech &nbsp;<i
+                        class="fa-solid fa-phone"></i>&nbsp;+573147654655&nbsp;<i
+                        class="fa-solid fa-phone"></i>&nbsp;+573217627780</h3>
+            </div>
+        </div>
+        <header>
+            <div class="logo logo--left">
+                <div class="logo__img">
+                    <img src="/img/wifi-logo.png" alt="" srcset="">
+                </div>
+                <div class="logo__text">
+                    <h1>AG INGENIERIA WISP</h1>
+                    <div class="topnav" @click="navtopClicked">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="menu--right">
+                <ul v-if="show">
+                    <li>INICIO</li>
+                    <li>NOSOTROS</li>
+                    <li>PRODUCTOS</li>
+                    <li>CONTÁCTANOS</li>
+                    <li>LOGIN</li>
+                </ul>
+            </div>
+        </header>
+        <div class="slider slider__about">
+            <aside class="slider__about--top">
+                <p><i class="fa-solid fa-laptop-code"></i>&nbsp;Contáctanos</p>
+                <h3>¡Estamos aquí para ayudarte!.</h3>
+            </aside>
+
+        </div>
+        <main>
+            <article>
+                <section>
+                    <div class="contact-us">
+                        <div class="contact-us--left">
+                            <p>¿Interesado en Internet rápido y confiable? ¿Tiene una pregunta de preventa o necesita
+                                ayuda? ¿Buscas paquetes de negocios?</p>
+                            <h1>¡Nuestro equipo local está listo para ayudar!</h1>
+                            <p><i class="fa-solid fa-envelopes-bulk"></i> ventas@agingenieria.tech</p>
+                            <p><i class="fa-solid fa-mobile-screen-button"></i> +573247654655</p> 
+                        </div>
+                        <div class="contact-us--right">
+                            <div class="contact-us__form">
+                                <form action="#" method="post">
+                                    <div class="contact-us__head contact-us__head--mainTheme">
+                                        <h1>Envíanos un mensaje!</h1>
+                                    </div>
+                                    <div class="contact-us__body contact-us__body--mainTheme">
+                                        <div class="form-control form-control--contact-us">
+                                            <p>Nombre</p> 
+                                            <input type="text" name="" id="">
+                                            <i class="fa-solid fa-user"></i>
+                                        </div>
+                                        <div class="form-control form-control--contact-us">
+                                            <p>Email</p>
+                                            <input type="text" name="" id="">
+                                            <i class="fa-solid fa-envelope"></i>
+                                        </div>
+                                        <div class="form-control form-control--contact-us">
+                                            <p>Teléfono</p>
+                                            <input type="text" name="" id="">
+                                            <i class="fa-solid fa-phone"></i>
+                                        </div>
+                                        <div class="form-control form-control--contact-us">
+                                            <p>Tipo de Solicitud</p>
+                                            <select name="customer-request" id="customer-request" >
+                                                <option value=""></option>
+                                                <option value="">Facturación</option>
+                                                <option value="">Soporte Técnico</option>
+                                                <option value="">Ventas</option>
+                                                <option value="">Solicitar llamada</option>
+                                            </select>
+                                            <i class="fa-solid fa-user"></i>
+                                        </div>
+                                        <div class="form-control form-control--contact-us">
+                                            <p>mensaje</p>
+                                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="contact-us__footer contact-us__footer--mainTheme">
+                                        <div class="button button--green-contactUs">
+                                            Enviar mensaje
+                                        </div>
+                                        <p><i class="fa-solid fa-clock"></i> Permita que nuestro equipo tenga hasta 24 horas para responder a su consulta. Para obtener asistencia inmediata, llame al +573147654655-+573217627780.</p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section>
+                    <div class="content">
+                        <div class="content__logo-bottom">
+                            <div class="logo logo--bottom">
+                                <div class="logo__img--bottom">
+                                    <img src="/img/wifi-logo.png" alt="" srcset="">
+                                </div>
+                                <div class="logo__text">
+                                    <h1>AG INGENIERIA WISP</h1>
+                                </div>
+                            </div>
+                            <div>
+                                <p>TU RESPUESTA POR UN INTERNET DE ALTA VELOCIDAD SIN CONTRATO NI CLAUSULA DE
+                                    PERMANENCIA.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+
+            </article>
+        </main>
+        <div class="footer">
+            <div class="footer__container">
+                <div class="footer__container--navigation">
+                    <ul>
+                        <li>NAVEGACION</li>
+                        <li>Inicio</li>
+                        <li>Nosotros</li>
+                        <li>Planes</li>
+                        <li>Articulos</li>
+                    </ul>
+                </div>
+                <div class="footer__container--my-account">
+                    <ul>
+                        <li>MI CUENTA</li>
+                        <li>Pagar Factura</li>
+                        <li>Mi cuenta</li>
+                    </ul>
+                </div>
+                <div class="footer__container--support">
+                    <ul>
+                        <li>SOPORTE</li>
+                        <li>FAQs</li>
+                        <li>Crear Ticket</li>
+                        <li>Servicios Adicionales</li>
+                    </ul>
+                </div>
+                <div class="footer__container--agingenieriawisp">
+                    <ul>
+                        <li>AG INGENIERIA WISP</li>
+                        <li><i class="fa-brands fa-facebook-f"></i>&nbsp; Síguenos en Facebook</li>
+                        <li><i class="fa-solid fa-phone"></i> Llámanos</li>
+                        <li><i class="fa-solid fa-envelope"></i> Email ventas@agingenieria.tech</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        Vue.createApp({
+            data() {
+                return {
+                    message: 'Hello Vue!',
+                    show: false,
+
+                }
+            },
+            methods: {
+                navtopClicked: function () {
+                    console.log("se ha dado clic en el nav!")
+                    if (this.show === true) this.show = false
+                    else this.show = true
+                },
+                myEventHandler(e) {
+                    let width = window.innerWidth
+                    if (width > 900) this.show = true
+                    if (width <= 900) this.show = false
+                }
+            },
+            created() {
+                let width = window.innerWidth
+                if (width > 900) this.show = true
+                window.addEventListener("resize", this.myEventHandler)
+            },
+            destroyed() {
+                window.removeEventListener("resize", this.myEventHandler)
+            },
+        }).mount('#app')
+    </script>
+</body>
+
+</html>

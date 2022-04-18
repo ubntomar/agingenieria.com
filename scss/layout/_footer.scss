@@ -1,0 +1,40 @@
+.footer {
+    grid-area: footer;
+    background-color: $color-black;
+
+    &__container {
+        padding: 8rem 0 8rem 12vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "navigation my-account support agingenieriawisp";
+
+        @include respond(tab-port) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+                "navigation my-account"
+                "support agingenieriawisp"
+            ;
+        }
+        @include respond(phone) {
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "navigation"
+                "my-account"
+                "support"
+                "agingenieriawisp"
+            ;
+        }
+        & div ul {
+            & li{
+                list-style:none;
+                color:$color-grey-dark-2;
+            }
+            & li:first-child{
+                color:$color-white;
+                padding:1.5rem 0 1rem 0;
+            }
+        }
+        
+    }
+}

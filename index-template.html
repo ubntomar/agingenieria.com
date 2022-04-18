@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+
+<body>
+    <div class="container" id="app">
+        <div class="company">
+            <div class="company-info company-info--left ">
+                <h5>SOMOS TU SOLUCIÓN DE INTERNET BANDA ANCHA</h5>
+            </div>
+        </div>
+        <div class="phone">
+            <div class="company-info company-info--right">
+                <h5><i class="fa-solid fa-envelope"></i> ventas@agingenieria.tech &nbsp;<i
+                        class="fa-solid fa-phone"></i>&nbsp;+573147654655&nbsp;<i
+                        class="fa-solid fa-phone"></i>&nbsp;+573217627780</h3>
+            </div>
+        </div>
+        <header>
+            <div class="logo logo--left">
+                <div class="logo__img">
+                    <img src="/img/wifi-logo.png" alt="" srcset="">
+                </div>
+                <div class="logo__text">
+                    <h1>AG INGENIERIA WISP</h1>
+                    <div class="topnav" @click="navtopClicked">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="menu--right">
+                <ul v-if="show">
+                    <li>INICIO</li>
+                    <li>NOSOTROS</li>
+                    <li>PRODUCTOS</li>
+                    <li>CONTÁCTANOS</li>
+                    <li>LOGIN</li>
+                </ul>
+            </div>
+        </header>
+        <div class="slider slider__home">
+            <aside>
+                <h3>SERVICIO INTERNET INALÁMBRICO</h3>
+                <p>Tu Proveedor Rural!</p>
+                <h3>Orgullosamente del llano Colombiano con cobertura local para brindar a nuestros clientes
+                    acompañamiento e
+                    instalación por parte de nuestro equipo profesional.</h3>
+                <p class="button  button--black">Saber más...</p>
+            </aside>
+        </div>
+        <main>
+            <article>
+                <section class="content">
+                    <div class="content__text">
+                        <div class="content__text--top">
+                            <h5>AG INGENIERIA WISP – PROVEEDOR DE SERVICIO DE INTERNET INALAMBRICO HOGAR Y EMPRESAS</h5>
+                            <p>Velocidades según tu Necesidad</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="content">
+                    <div class="content__cards">
+                        <div class="card card__home">
+                            <div class="card__head">
+                                <img src="img/card-head-1.png" alt="" class="src">
+                            </div>
+                            <div class="card__body">
+                                <p>Navega & Has compras</p>
+                            </div>
+                        </div>
+                        <div class="card card__home">
+                            <div class="card__head">
+                                <img src="img/card-head-2.png" alt="" class="src">
+                            </div>
+                            <div class="card__body">
+                                <p>Trabaja desde casa & Estudia Virtualmente</p>
+                            </div>
+                        </div>
+                        <div class="card card__home">
+                            <div class="card__head">
+                                <img src="img/card-head-3.png" alt="" class="src">
+                            </div>
+                            <div class="card__body">
+                                <p>Conéctate con tu familia</p>
+                            </div>
+                        </div>
+                        <div class="card card__home">
+                            <div class="card__head">
+                                <img src="img/card-head-4.png" alt="" class="src">
+                            </div>
+                            <div class="card__body">
+                                <p>& Mucho más...!</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="content">
+                    <div class="content__text">
+                        <div class="content__text--bottom">
+                            <p>El equipo de Ag Ingeneria Wisp está listo para ayudarte a conseguir el mejor servicio de
+                                Internet!. La informaciòn acerca de los distintos paquetes de internet está dissponible
+                                en nuestras áreas de servicio que puedes encontrar aquí abajo.
+                            </p>
+                            <p>En nuestra empresa te ofrecemos diferentes planes y velocidades dependiento de tu
+                                ubicación. Por favor compártenos tu ubicación por <i class="fa-brands fa-whatsapp"></i>
+                                Whatssapp y nos pondremos en
+                                contacto contigo.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="content">
+                    <div class="button button--green">
+                        <p>Mostrar Planes..</p>
+                    </div>
+                </section>
+                <section class="content">
+                    <div class="content__foreground content__foreground--home">
+                        <div class="content__foreground--text">
+                            <p>Interesado en un plan para empresa?</p>
+                            <h3>Contáctanos directamente para discutir nuestras opciones de servicio para tu empresa.
+                            </h3>
+                            <div class="button button--green">
+                                <p>Contáctanos..</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="content">
+                    <div class="content__callus">
+                        <div class="content__callus--text">
+                            Velocidades Más Altas - Sin Contratos - Las Mejores Tarifas están Aquí!
+                        </div>
+                        <div class="content__callus--button">
+                            <i class="fa-solid fa-phone"></i> obtén los mejores descuentos +573147654655
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="content">
+                        <div class="content__wisp">
+                            <div class="content__wisp--text">
+                                <div class="content__wisp--container">
+                                    <img class="imgf" src="/img/wisp.png" alt="" srcset="">
+                                    <h3><i class="fa-solid fa-satellite-dish"></i>&nbsp;ACERCA DE NUESTRO SERVICIO</h3>
+                                    <h1>Que tipo de servicio es este?</h1>
+                                    <p> Ag Ingeneiria Wisp es un proveedor de servio de Internet inalámbrico rápido y
+                                        confiable en el área del llano colombiano en el
+                                        departmanto del Meta dirigida a hogares y empresas.
+                                        Nuestro servicio se presta mediante una antena que tenga una clara línea de
+                                        vista a una de nuestras torres o repetidores.Desde la antena llevamos un cable
+                                        hacia dentro de la casa o empresa que a su ves se conecta al router Wifi
+                                        encargado de dar la
+                                        conexión al servicio de internet.
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <i class="fa-solid fa-arrow-trend-up"></i>
+                                            <p>&nbsp;Instalación Professional</p>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-arrow-trend-up"></i>
+                                            <p>&nbsp;Wifi & Hardware</p>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-arrow-trend-up"></i>
+                                            <p>&nbsp;Velocidades Confiable & Asequibles</p>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-arrow-trend-up"></i>
+                                            <p>&nbsp;Varios planes que encajan a tu necesidad.</p>
+                                        </li>
+                                    </ul>
+                                    <div class="button button--green">
+                                        Adquirir servicio!
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="content">
+                        <div class="content__map">
+                            <div class="logo-main logo-main--center">
+                                <div class="logo-main__img">
+                                    <img src="/img/wifi-logo-white.png" alt="" srcset="">
+                                </div>
+                                <div class="logo-main__text">
+                                    <h1>AG INGENIERIA WISP</h1>
+                                </div>
+                            </div>
+                            <h1>Areas de cobertura</h1>
+                            <h3>Actualmente prestamos servicio en Villavicencio, Acacias, Guamal, Castilla , El Dorado,
+                                San Martín Meta</h3>
+                            <h3>Si tu vives cerca de una de las ciudades mencionadas anteriormente es muy probable que
+                                te podamos prestar nuestro servicio para tu hogar o empresa!</h3>
+                            <img src="/img/map.png" alt="" srcset="">
+                            <h3>No estás seguro de tu cobertura? Contáctanos para verificar!</h3>
+                            <div class="button button--green">
+                                <p>Dale..</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="content">
+                        <div class="content__logo-bottom">
+                            <div class="logo logo--bottom">
+                                <div class="logo__img--bottom">
+                                    <img src="/img/wifi-logo.png" alt="" srcset="">
+                                </div>
+                                <div class="logo__text">
+                                    <h1>AG INGENIERIA WISP</h1>
+                                </div>
+                            </div>
+                            <div>
+                                <p>TU RESPUESTA POR UN INTERNET DE ALTA VELOCIDAD SIN CONTRATO NI CLAUSULA DE
+                                    PERMANENCIA.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+            </article>
+        </main>
+        <div class="footer">
+            <div class="footer__container">
+                <div class="footer__container--navigation">
+                    <ul>
+                        <li>NAVEGACION</li>
+                        <li>Inicio</li>
+                        <li>Nosotros</li>
+                        <li>Planes</li>
+                        <li>Articulos</li>
+                    </ul>
+                </div>
+                <div class="footer__container--my-account">
+                    <ul>
+                        <li>MI CUENTA</li>
+                        <li>Pagar Factura</li>
+                        <li>Mi cuenta</li>
+                    </ul>
+                </div>
+                <div class="footer__container--support">
+                    <ul>
+                        <li>SOPORTE</li>
+                        <li>FAQs</li>
+                        <li>Crear Ticket</li>
+                        <li>Servicios Adicionales</li>
+                    </ul>
+                </div>
+                <div class="footer__container--agingenieriawisp">
+                    <ul>
+                        <li>AG INGENIERIA WISP</li>
+                        <li><i class="fa-brands fa-facebook-f"></i>&nbsp; Síguenos en Facebook</li>
+                        <li><i class="fa-solid fa-phone"></i> Llámanos</li>
+                        <li><i class="fa-solid fa-envelope"></i> Email ventas@agingenieria.tech</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        Vue.createApp({
+            data() {
+                return {
+                    message: 'Hello Vue!',
+                    show: false,
+
+                }
+            },
+            methods: {
+                navtopClicked: function () {
+                    console.log("se ha dado clic en el nav!")
+                    if (this.show === true) this.show = false
+                    else this.show = true
+                },
+                myEventHandler(e) {
+                    let width = window.innerWidth
+                    if (width > 900) this.show = true
+                    if (width <= 900) this.show = false
+                }
+            },
+            created() {
+                let width = window.innerWidth
+                if (width > 900) this.show = true
+                window.addEventListener("resize", this.myEventHandler)
+            },
+            destroyed() {
+                window.removeEventListener("resize", this.myEventHandler)
+            },
+        }).mount('#app')
+    </script>
+</body>
+
+</html>

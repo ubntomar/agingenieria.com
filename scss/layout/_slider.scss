@@ -1,0 +1,107 @@
+.slider {
+    font-family: 'Nunito', sans-serif;
+
+    &__home {
+        height:65vh; 
+        background: $color-main-theme;
+        background-image: linear-gradient(to right, $color-main-theme 50%, $color-transparent 70%), url(../img/1.jpg);
+
+        & aside {
+            margin-left: 10vw;
+
+            @include respond(phone) {
+                margin-left: 18px;
+            }
+
+            width: 45rem;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+
+            & :nth-child(-n+3) {
+                padding: 1.2rem 0;
+            }
+
+            & :nth-child(1) {
+                padding: 0;
+                line-height: .9;
+
+                @include respond(phone) {
+                    font-size: 1.5rem;
+                }
+            }
+
+            & h3:nth-of-type(2) {
+                color: $color-white;
+
+                @include respond(phone) {
+                    font-size: 1.5rem;
+                }
+            }
+
+            & p:nth-of-type(1) {
+                font-size: 5rem;
+                color: $color-white;
+                line-height: 1;
+                text-shadow: $color-dark-theme 1px 1px;
+
+                @include respond(phone) {
+                    font-size: 4.0rem;
+                }
+            }
+        }
+    }
+
+    &__about {
+        background: $color-black;
+        background-image: linear-gradient(to right, $color-black 50%, $color-transparent 70%), url(../img/tech.jpg);
+        &--top {
+            padding:10rem 0;
+            margin-left: 10vw;
+            width: 50rem;
+            height:100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            & i{
+                color:$color-main-theme;
+            }
+            & :nth-child(1) {
+                padding: 0;
+                line-height: .9;
+
+                @include respond(phone) {
+                    font-size: 1.5rem;
+                    & i{
+                        font-size:3rem;
+                    }
+                }
+            }
+            & p:nth-of-type(1) {
+                font-size: 5rem;
+                color: $color-white;
+                line-height: 1;
+                text-shadow: $color-dark-theme 1px 1px;
+
+                @include respond(phone) {
+                    font-size: 4.0rem;
+                }
+            }
+            @include respond(phone) {
+                margin-left: 2rem;
+                width: 30rem;
+            }
+
+        }
+
+        
+        
+    }
+
+    background-size:cover;
+    background-position: top;
+
+
+}

@@ -1,0 +1,22 @@
+.company-info{
+    
+    & h5{
+        padding: 1rem;
+        height: min-content;
+    }
+    &--left{
+        margin-left:10vw;
+        @include respond(tab-port) { // width < 900?
+            margin-left:0;
+            text-align: center;
+        }
+    }
+    &--right{
+        text-align: right;
+        margin-right:10vw;
+        @include respond(tab-port) { // width < 900?
+            text-align: center;
+            margin-right:0;
+        }
+    }
+}

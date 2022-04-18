@@ -1,0 +1,26 @@
+.packages{ 
+    margin:1rem;
+    & * {
+        display: block;
+        margin:2rem auto;
+        padding:1rem 2.5rem;
+        font-size:2.4rem;
+        border-radius: 40px;
+    }
+    & form input{
+        &:nth-child(2){
+            border:solid $color-main-theme 3px;
+            color:#60635c; 
+            text-align: center;
+            font-size:2rem;
+            font-weight: 100;
+            &:focus{
+                outline: none;
+            }
+        }
+        &:nth-child(3){
+            background-color: $color-main-theme;
+            border:solid $color-black 1px;
+        }
+    }
+}

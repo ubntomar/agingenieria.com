@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+
+<body>
+    <div class="container" id="app">
+        <div class="company">
+            <div class="company-info company-info--left ">
+                <h5>SOMOS TU SOLUCIÓN DE INTERNET BANDA ANCHA</h5>
+            </div>
+        </div>
+        <div class="phone">
+            <div class="company-info company-info--right">
+                <h5><i class="fa-solid fa-envelope"></i> ventas@agingenieria.tech &nbsp;<i
+                        class="fa-solid fa-phone"></i>&nbsp;+573147654655&nbsp;<i
+                        class="fa-solid fa-phone"></i>&nbsp;+573217627780</h3>
+            </div>
+        </div>
+        <header>
+            <div class="logo logo--left">
+                <div class="logo__img">
+                    <img src="/img/wifi-logo.png" alt="" srcset="">
+                </div>
+                <div class="logo__text">
+                    <h1>AG INGENIERIA WISP</h1>
+                    <div class="topnav" @click="navtopClicked">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="menu--right">
+                <ul v-if="show">
+                    <li>INICIO</li>
+                    <li>NOSOTROS</li>
+                    <li>PRODUCTOS</li>
+                    <li>CONTÁCTANOS</li>
+                    <li>LOGIN</li>
+                </ul>
+            </div>
+        </header>
+        <div class="slider slider__about">
+            <aside class="slider__about--top">
+                <p><i class="fa-solid fa-tower-broadcast"></i>&nbsp;Quién Somos</p>
+                <h3>Un poco acerca de nosotros y que hacemos.</h3>
+            </aside>
+            <div class="slider__about--bottom">
+                <div class="slider__about">
+                    <div class="card__about">
+                        <div class="card__about1">
+                            <div class="card__about--top">
+                                <i class="fa-solid fa-gear"></i>
+                            </div>
+                            <div class="card__about__body">
+                                <div class="card__about__body--title">
+                                    <h1>Servicio confiable</h1>
+                                </div>
+                                <div class="card__about__body--content">
+                                    <p>Ag Ingenieria Wisp utiliza la última tecnología comprobada para brindar acceso confiable a Internet en su hogar o empresa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__about2">
+                            <div class="card__about--top">
+                                <i class="fa-solid fa-infinity"></i>
+                            </div>
+                            <div class="card__about__body">
+                                <div class="card__about__body--title">
+                                    <h1>Datos ilimitados</h1>
+                                </div>
+                                <div class="card__about__body--content">
+                                    <p>¿Cansado de las tarifas de uso sorpresa? Ag Ingenieria Wisp proporciona datos ilimitados, ¡así que transmita y descargue esa película adicional!.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__about3">
+                            <div class="card__about--top">
+                                <i class="fa-solid fa-headset"></i>
+                            </div>
+                            <div class="card__about__body">
+                                <div class="card__about__body--title">
+                                    <h1>Apoyo local</h1>
+                                </div>
+                                <div class="card__about__body--content">
+                                    <p>Ag Ingenieria Wisp es de propiedad local y está operado en una red privada, por lo que puede contar con el apoyo local de personas reales.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__about4">
+                            <div class="card__about--top">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="card__about__body">
+                                <div class="card__about__body--title">
+                                    <h1>Streaming Video</h1>
+                                </div>
+                                <div class="card__about__body--content">
+                                    <p>Ag Ingenieria Wisp es compatible con servicios de transmisión de video como Twitch, Netflix, YouTube, PLuto Tv y más.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <main>
+            <article>
+                <section class="content">
+                    <div class="content__text">
+                        <div class="content__text--top-about">
+                            <p>Por qué escojer Ag Ingenieria Wisp?</p>
+                        </div>
+                        <div class="content__about-us">
+                            <p>Nuestros clientes han elegido Ag Ingeneiria Wisp por muchas razones, desde querer evitar los
+                                límites de datos y la despriorización con las compañías de telefonía celular y satélite,
+                                hasta querer velocidades más rápidas para los servicios de chat de video como Zoom y
+                                FaceTime.
+                            </p>
+                            <div>
+                                <img src="/img/wisp.jpg" alt="">
+                                <p>Ag Ingeneiria Wisp es su respuesta para el acceso a Internet de alta velocidad sin límites
+                                    de datos. Actualmente brindamos acceso a Internet en todo el departamento del Meta en especial Acacias, Guamal, El Dorado. Siempre estamos buscando
+                                    expandir nuestra área de servicio, así que envíenos su dirección para ayudarnos a
+                                    identificar dónde hacer crecer nuestra red.
+
+                                    Ag Ingeneiria Wisp trabaja en estrecha colaboración con los residentes y los gobiernos
+                                    regionales para enfocarse en la prestación de servicios en áreas previamente
+                                    desatendidas. Ya sea que necesite Internet de banda ancha en su hogar o negocio,
+                                    ¡Ag Ingeneiria Wisp está aquí para ayudarlo! ¡Haremos todo lo posible para brindarle el
+                                    servicio!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content__separator--black"></div>
+                </section>
+                <section>
+                    <div class="content">
+                        <div class="content__logo-bottom">
+                            <div class="logo logo--bottom">
+                                <div class="logo__img--bottom">
+                                    <img src="/img/wifi-logo.png" alt="" srcset="">
+                                </div>
+                                <div class="logo__text">
+                                    <h1>AG INGENIERIA WISP</h1>
+                                </div>
+                            </div>
+                            <div>
+                                <p>TU RESPUESTA POR UN INTERNET DE ALTA VELOCIDAD SIN CONTRATO NI CLAUSULA DE
+                                    PERMANENCIA.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+            </article>
+        </main>
+        <div class="footer">
+            <div class="footer__container">
+                <div class="footer__container--navigation">
+                    <ul>
+                        <li>NAVEGACION</li>
+                        <li>Inicio</li>
+                        <li>Nosotros</li>
+                        <li>Planes</li>
+                        <li>Articulos</li>
+                    </ul>
+                </div>
+                <div class="footer__container--my-account">
+                    <ul>
+                        <li>MI CUENTA</li>
+                        <li>Pagar Factura</li>
+                        <li>Mi cuenta</li>
+                    </ul>
+                </div>
+                <div class="footer__container--support">
+                    <ul>
+                        <li>SOPORTE</li>
+                        <li>FAQs</li>
+                        <li>Crear Ticket</li>
+                        <li>Servicios Adicionales</li>
+                    </ul>
+                </div>
+                <div class="footer__container--agingenieriawisp">
+                    <ul>
+                        <li>AG INGENIERIA WISP</li>
+                        <li><i class="fa-brands fa-facebook-f"></i>&nbsp; Síguenos en Facebook</li>
+                        <li><i class="fa-solid fa-phone"></i> Llámanos</li>
+                        <li><i class="fa-solid fa-envelope"></i> Email ventas@agingenieria.tech</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        Vue.createApp({
+            data() {
+                return {
+                    message: 'Hello Vue!',
+                    show: false,
+
+                }
+            },
+            methods: {
+                navtopClicked: function () {
+                    console.log("se ha dado clic en el nav!")
+                    if (this.show === true) this.show = false
+                    else this.show = true
+                },
+                myEventHandler(e) {
+                    let width = window.innerWidth
+                    if (width > 900) this.show = true
+                    if (width <= 900) this.show = false
+                }
+            },
+            created() {
+                let width = window.innerWidth
+                if (width > 900) this.show = true
+                window.addEventListener("resize", this.myEventHandler)
+            },
+            destroyed() {
+                window.removeEventListener("resize", this.myEventHandler)
+            },
+        }).mount('#app')
+    </script>
+</body>
+
+</html>

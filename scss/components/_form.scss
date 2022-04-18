@@ -1,0 +1,47 @@
+.form-control {
+    &--contact-us {
+        color: $color-main-theme;
+        padding: 1rem 1rem;
+
+        & input,
+        select,
+        textarea {
+            border: none;
+            border-bottom: 2px solid #bebed2;
+            background-color: $color-white;
+            color: $color-grey-dark-3;
+            width: 23rem;
+            @include respond(tab-port){
+                width:90%;
+            }
+            &:focus {
+                outline: none;
+                color: $color-dark-theme;
+                font-size: 1.4rem;
+            }
+        }
+        & textarea{
+            width:90%; 
+        }
+
+        & select {
+            color: $color-grey-dark-3;
+            width: 23rem;
+
+            & option {
+                color: $color-main-theme;
+            }
+        }
+
+
+        &:nth-child(5) {
+            width: 80%;
+            @include respond(big-desktop){
+                width: 68%;
+            }
+            @include respond(tab-port){
+                width:100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,442 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 100px auto auto auto;
+    grid-auto-columns: 1fr;
+    // gap: 1px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "company phone"
+        "header header"
+        "slider slider"
+        "main main"
+        "footer footer";
+
+    @include respond(tab-port) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas:
+            "company"
+            "phone"
+            "header"
+            "slider"
+            "main"
+            "footer";
+    }
+
+}
+
+.company {
+    grid-area: company;
+
+    @include respond(tab-port) {
+        display: none;
+    }
+
+    & div h5 {
+        padding-left: 0;
+    }
+}
+
+.phone {
+    grid-area: phone;
+
+    @include respond(tab-port) {
+        background-color: $color-main-theme;
+    }
+
+    & h5 {
+        padding-right: 0;
+    }
+}
+
+.slider {
+    grid-area: slider;
+}
+
+main {
+    grid-area: main;
+
+    & article {
+        & section {
+            & .content {
+                &__text {
+                    &--top {
+                        margin: 10vh 10vh;
+                        text-align: center;
+
+                        & p {
+                            font-size: 3.5rem;
+                            color: $color-grey-dark-3;
+                            text-shadow: $color-dark-theme 1px 1px;
+
+                            @include respond(phone) {
+                                font-size: 3rem;
+                                ;
+                            }
+                        }
+                    }
+
+                    &--top-about {
+                        margin: 5vh 10vh 0 10vh;
+                        text-align: center;
+
+                        & p {
+                            font-size: 3.5rem;
+                            color: $color-grey-dark-3;
+                            text-shadow: $color-dark-theme 1px 1px;
+
+                            @include respond(phone) {
+                                font-size: 3rem;
+                                ;
+                            }
+                        }
+                    }
+
+                    &--bottom {
+                        margin: 13vh 15vw;
+                        text-align: center;
+                        font-size: 2.4rem;
+
+                        & p {
+                            margin-top: 6rem;
+                            color: $color-grey-dark-3;
+
+                            &:nth-child(1) {
+                                font-weight: 600;
+                            }
+
+                            &:nth-child(2) {
+                                margin: 8vh 8vw;
+                                font-weight: 300;
+
+                                @include respond(tab-port) {
+                                    margin: 8vh 0;
+                                }
+                            }
+                        }
+
+                        @include respond(phone) {
+                            // font-size: 4rem;
+                            margin: 8vh 1vw;
+                        }
+
+                    }
+                }
+
+                &__cards {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+
+                    // padding:5rem 0;
+                    @include respond(phone) {
+                        justify-content: center;
+                    }
+
+                    //_card.scss
+                }
+
+                &__foreground {
+
+                    height: 40rem;
+
+                    @include respond(phone) {
+                        height: 50rem;
+                    }
+
+                    margin:20rem 0 0 0;
+
+                    background-attachment: fixed;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center center;
+                    &--home{
+                        background-image: url("/img/brandon.jpg");
+                    }
+                    &--products{
+                        background-image: url("/img/techtable.jpg");
+                    }
+                    &--products2{
+                        background-image: url("/img/speed.jpg");
+                        
+                    }
+
+                    &--text {
+                        text-align: center;
+                        height: 100%;
+                        padding: 10rem 0;
+                        color: $color-white;
+                        background-color: rgba($color: #000000, $alpha: .7);
+
+                        & p:nth-child(1) {
+                            font-size: 4.5rem;
+                            color: $color-white;
+                            text-shadow: $color-dark-theme 1px 1px;
+
+                        }
+
+                        & div.button--green {
+                            margin-top: 8rem;
+
+                            & p {
+                                font-size: initial;
+                                text-shadow: initial;
+                                color: $color-black;
+                            }
+                        }
+
+                        @include respond(phone) {
+                            padding: 10rem 1rem;
+                        }
+                    }
+                }
+                
+
+                &__callus {
+                    margin: 0;
+                    background-color: $color-main-theme;
+                    color: $color-white;
+                    font-size: 4rem;
+                    text-align: center;
+                    padding: 6rem 0;
+
+                    & div:nth-child(2) {
+                        margin-top: 2rem;
+                    }
+
+                    &--button {
+                        width: 70rem;
+                        margin: 0 auto;
+                        border-radius: 5rem;
+                        color: $color-main-theme;
+                        background-color: $color-white;
+
+                        @include respond(tab-port) {
+                            width: 35rem;
+                            font-size: 2rem;
+                        }
+                    }
+
+                    @include respond(tab-port) {
+                        font-size: 2rem;
+                        padding: 6rem 2rem;
+                    }
+                }
+
+                &__wisp {
+                    height: 85vh;
+
+                    @include respond(phone) {
+                        max-height: 60rem;
+                    }
+
+                    &--text {
+                        max-width: 1200px;
+                        display: block;
+                        margin: 0 auto;
+                        padding: 7rem;
+
+                        @include respond(phone) {
+                            margin: 0 auto;
+                            padding: 3rem;
+                        }
+                    }
+
+                    &--container {
+                        &:nth-child(4) {
+                            color: green;
+                        }
+
+                        & img.imgf {
+                            width: 30vw;
+                            height: auto;
+                            max-height: 275px;
+                            max-width: 360px;
+                            float: right;
+                            border-radius: .8rem;
+                            margin-left: 1rem;
+                            box-shadow: 0 0 10px 6px rgba(152, 155, 94, 0.3);
+                        }
+
+                        & h1 {
+                            font-weight: 400;
+                            margin: 2rem 0;
+                        }
+
+                        & p {
+                            & span {
+                                color: rgb(48, 99, 175);
+
+                            }
+                        }
+
+                        & div.button.button--green {
+                            margin-top: 3rem;
+                        }
+
+                        & ul {
+                            padding: 1rem 3rem;
+
+                            & li {
+                                list-style: none;
+
+                                & p {
+                                    //    color:blue;
+                                    display: inline;
+                                }
+
+
+                            }
+                        }
+                    }
+                }
+
+                &__map {
+                    padding: 8rem 0;
+                    background-color: $color-grey-dark-3;
+                    color: $color-white;
+                    text-align: center;
+
+                    &>img {
+
+                        @include respond(tab-port) {
+                            width: 96vw;
+                            height: auto;
+                        }
+                    }
+
+                    &>h1,
+                    h3:nth-child(3),
+                    h3:nth-child(4),
+                    h3:nth-child(6) {
+                        font-weight: 350;
+                        padding: 2rem 2rem;
+                    }
+
+                    & div:nth-child(7) {
+                        margin-top: 3rem;
+                    }
+                }
+
+                &__logo-bottom {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    padding: 2rem 0;
+
+                    @include respond(tab-port) {
+                        flex-direction: column;
+                    }
+
+                    &>div:nth-child(2) {
+                        & p {
+                            line-height: 1.2;
+
+                            @include respond(tab-port) {
+                                margin: 0 2rem;
+                            }
+                        }
+                    }
+
+                    &>div {
+                        padding: 1.5rem 0;
+                    }
+                }
+
+                &__about-us {
+                    margin: 2rem 15vw;
+                    
+                    & p {
+                        text-align: center;
+                        font-size: 2.4rem;
+                        &:first-child {
+                            padding: 4rem;
+                        }
+                    }
+
+                    &>div {
+                        & img {
+                            border-radius: 10px;
+                            width:100%;
+                            margin:1rem 0;
+                            box-shadow: 0 0 8px 5px rgba($color: $color-black, $alpha: .3);
+
+                            @include respond(big-desktop) {
+                                width:auto;
+                                border-radius: 10px;
+                                float: left;
+                                margin: 0 10rem 10rem 0;
+                                box-shadow: 0 0 8px 5px rgba($color: $color-black, $alpha: .3);
+                            }
+                            
+                        }
+                    }
+                }
+                &__separator--black{
+                    margin:15rem 0 0 0;
+                    border-bottom:solid $color-black 5rem;
+                }
+                &__info{
+                    width:100%;
+                    display:flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    padding:5rem;
+                    &--text{
+                        width:60rem;
+                        @include respond(phone){
+                            width:36rem;
+
+                        }
+                        & h1{
+                            font-size:3.6rem;
+                            color:$color-grey-dark-3;
+                            padding-bottom: 1rem;
+                        }
+                        & ul{
+                            & li{
+                                list-style: none;
+                                margin:3rem 1rem;
+                                position:relative;
+                                & i{
+                                    color:$color-main-theme;
+                                }
+                                & p{
+                                    display: inline;
+                                    font-weight:600;
+                                    margin-left: .5rem;
+                                }
+                                
+                            }
+                        }
+                    }
+                    &--img{
+                        width:min-content;
+                        & img{
+                            height:50vh;
+                            @include respond(phone){
+                                height:30vh;
+                            }
+                            border:solid $color-main-theme 5px;
+                            border-radius: 10px;
+                            border-left: 0px;
+                        }
+                    }
+                     
+                }
+            }
+        }
+    }
+}
+
+
+.logo {
+    grid-area: logo;
+}
+
+.menu {
+    grid-area: menu;
+}
